@@ -1,0 +1,27 @@
+{
+  "name": "tdd-js-workshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chrono24/tdd-js-workshop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chrono24/tdd-js-workshop/issues"
+  },
+  "homepage": "https://github.com/Chrono24/tdd-js-workshop#readme",
+  "devDependencies": {
+    "@babel/core": "^7.17.9",
+    "@babel/preset-env": "^7.16.11",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^28.0.3",
+    "eslint": "^8.14.0",
+    "jest": "^28.0.3"
+  }
+}

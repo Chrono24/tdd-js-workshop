@@ -1,0 +1,240 @@
+{
+   "root": true,
+   "env": {
+      "browser": true,
+      "node": true,
+      "es6": true,
+      "jest": true
+   },
+   "extends": [
+      "eslint:recommended"
+   ],
+   "parserOptions": {
+      "parser": "babel-eslint",
+      "ecmaVersion": 2018,
+      "sourceType": "module",
+      "allowImportExportEverywhere": true
+   },
+   "rules": {
+      "array-bracket-spacing": [
+         2,
+         "never",
+         {}
+      ],
+      "block-scoped-var": 0,
+      "brace-style": [
+         2,
+         "1tbs",
+         {
+            "allowSingleLine": false
+         }
+      ],
+      "camelcase": [
+         2,
+         {
+            "properties": "always"
+         }
+      ],
+      "comma-dangle": [
+         2,
+         "never"
+      ],
+      "comma-style": [
+         2,
+         "last"
+      ],
+      "complexity": 0,
+      "curly": [
+         2,
+         "all"
+      ],
+      "dot-location": [
+         2,
+         "property"
+      ],
+      "dot-notation": 2,
+      "eol-last": [
+         "error",
+         "never"
+      ],
+      "guard-for-in": 2,
+      "key-spacing": [
+         2,
+         {
+            "beforeColon": false,
+            "afterColon": true
+         }
+      ],
+      "keyword-spacing": [
+         2,
+         {
+            "overrides": {
+               "if": {
+                  "before": true,
+                  "after": true
+               },
+               "else": {
+                  "before": true,
+                  "after": true
+               },
+               "while": {
+                  "before": true,
+                  "after": true
+               },
+               "catch": {
+                  "before": true
+               },
+               "in": {
+                  "before": true
+               },
+               "for": {
+                  "after": true
+               }
+            }
+         }
+      ],
+      "linebreak-style": [
+         0,
+         "windows"
+      ],
+      "lines-around-comment": [
+         1,
+         {
+            "beforeLineComment": true,
+            "beforeBlockComment": true,
+            "allowBlockStart": true,
+            "allowObjectStart": true,
+            "allowArrayStart": true,
+            "allowClassStart": true
+         }
+      ],
+      "lines-between-class-members": 1,
+      "max-depth": [
+         2,
+         5
+      ],
+      "max-len": 0,
+      "max-params": [
+         2,
+         9
+      ],
+      "max-statements": 0,
+      "new-cap": 0,
+      "newline-after-var": 0,
+      "no-bitwise": 2,
+      "no-caller": 2,
+      "padding-line-between-statements": [
+         2,
+         {
+            "blankLine": "always",
+            "prev": "*",
+            "next": "return"
+         }
+      ],
+      "no-cond-assign": 0,
+      "no-debugger": 0,
+      "no-empty": [
+         2,
+         {
+            "allowEmptyCatch": true
+         }
+      ],
+      "no-eq-null": 0,
+      "no-eval": 0,
+      "no-extend-native": 0,
+      "no-invalid-this": 0,
+      "no-irregular-whitespace": 2,
+      "no-iterator": 0,
+      "no-loop-func": 0,
+      "no-missing-imports": 0,
+      "no-mixed-spaces-and-tabs": 2,
+      "no-multi-spaces": 2,
+      "no-multi-str": 0,
+      "no-multiple-empty-lines": 2,
+      "no-new": 0,
+      "no-new-func": 0,
+      "no-new-wrappers": 0,
+      "no-plusplus": 0,
+      "no-proto": 0,
+      "no-script-url": 0,
+      "no-shadow": 0,
+      "no-spaced-func": 2,
+      "no-trailing-spaces": [
+         2
+      ],
+      "no-undef": 2,
+      "no-unused-expressions": 0,
+      "no-unused-vars": [
+         "warn",
+         {
+            "vars": "all",
+            "args": "after-used",
+            "ignoreRestSiblings": false
+         }
+      ],
+      "no-useless-escape": 0,
+      "no-use-before-define": 0,
+      "object-curly-newline": 0,
+      "object-property-newline": [
+         2,
+         {
+            "allowAllPropertiesOnSameLine": false
+         }
+      ],
+      "one-var": [
+         2,
+         "never"
+      ],
+      "operator-linebreak": [
+         2,
+         "after"
+      ],
+      "quotes": [
+         2,
+         "single",
+         {
+            "avoidEscape": true,
+            "allowTemplateLiterals": true
+         }
+      ],
+      "require-yield": 0,
+      "semi": "off",
+      "space-before-blocks": [
+         2,
+         "always"
+      ],
+      "space-before-function-paren": [
+         2,
+         {
+            "anonymous": "ignore",
+            "named": "never"
+         }
+      ],
+      "space-infix-ops": 2,
+      "space-unary-ops": [
+         2,
+         {
+            "words": true,
+            "nonwords": false
+         }
+      ],
+      "spaced-comment": [
+         2,
+         "always",
+         {
+            "block": {
+               "markers": [
+                  "!"
+               ]
+            }
+         }
+      ],
+      "strict": 0,
+      "valid-typeof": 0,
+      "wrap-iife": 2,
+      "yoda": [
+         2,
+         "never"
+      ]
+   }
+}
