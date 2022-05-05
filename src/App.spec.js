@@ -1,18 +1,15 @@
 import App from './App';
 
-jest.mock('./App', ()=> {
-        return jest.fn().mockImplementation(() => {
-            return {
-                addWithBigDelay: jest.fn((x, y) => x + y)
-            };
-        });
-    }
-);
+beforeAll(()=> {
+    jest.spyOn(App.prototype, 'delay').mockImplementation(async () => Promise.resolve());
+});
 
 describe('test App', ()=> {
 
     const AppInstance = new App();
-    test('addWithBigDelay', ()=> {
-        expect(AppInstance.addWithBigDelay(1, 2)).toBe(3);
+
+    test('addWithBigDelay', async ()=> {
+        const result = await AppInstance.addWithBigDelay(1, 2);
+        expect(result).toBe(3);
     });
 });
